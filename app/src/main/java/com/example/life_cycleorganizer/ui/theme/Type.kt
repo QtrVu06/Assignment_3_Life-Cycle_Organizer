@@ -33,5 +33,25 @@ val LatoFamily = FontFamily(
     Font(googleFont = Lato, fontProvider = provider, weight = FontWeight.Normal),
     Font(googleFont = Lato, fontProvider = provider, weight = FontWeight.Medium),
     Font(googleFont = Lato, fontProvider = provider, weight = FontWeight.Bold),
-    Font(googleFont = Lato, fontProvider = provider, weight = FontWeight.Black),
+    Font(googleFont = Lato, fontProvider = provider, weight = FontWeight.Medium, style = FontStyle.Italic),
+)
+
+
+val AppTypography = Typography(
+    headlineLarge = TextStyle(
+        fontFamily = OpenSansFamily,
+        fontWeight = FontWeight.Bold,
+        fontSize = 24.sp
+    ),
+    bodyLarge = TextStyle(
+        fontFamily = LatoFamily,
+        fontWeight = FontWeight.Normal,
+        fontSize = 16.sp
+    ),
+    labelMedium = TextStyle(
+        fontFamily = LatoFamily,
+        fontWeight = FontWeight.Light,
+        fontStyle = FontStyle.Italic,
+        fontSize = 14.sp
+    )
 )
